@@ -4,40 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LABCODE</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/style.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../img/03-Logo_favicon.png" type="image/x-icon">
+  <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="import" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
     
   </head>
   <body>
-    <header>
-      <div class="header-img">
-        <img src="/images/01-Logo.png" alt="" />
+<!-- Header -->
+<header class="bg-header">
+  <div class="header-interieur">
+    <a class="logo" href="./index.html">
+      <div class="logo-icon">
+        <img src="./img/01-Logo.png" alt="logo">
       </div>
-
-      <!-- nav bar -->
-      <nav>
-        <a href="index.html" target="_blank">Accueil</a>
-        <a href="./chapitre.html">Chapitres</a>
-        <a href="FAQ">FAQ</a>
-        <a href="Apropos.html" target="_blank">À Propos</a>
-      </nav>
-      <!-- nav bar end -->
-
-      <!-- Select Langues -->
-      <div class="langues">
-        <select name="Langues" id="">
-          <option value="FR">FR</option>
-          <option value="NL">NL</option>
-          <option value="EN">EN</option>
-        </select>
+      <div class="logo-text">
+        <span class="logo-titre">LabCode</span>
+        <span class="logo-sous-titre">FORMATION JAVASCRIPT</span>
       </div>
-      <!-- Select Langues end -->
-
-      <div class="icone-loupe">
-        <p>🔍</p>
-      </div>
-    </header>
+    </a>
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <!-- Animation  du menu ul-link-->
+      <a class="nav-link ul-link" href="./index.html">Accueil</a>
+      <a class="nav-link ul-link" href="./chapitre.html">Chapitres</a>
+      <a class="nav-link ul-link" href="./Apropos.html">À propos</a>
+    </nav>
+  </div>
+</header>
 
     <main>
       <!-- HERO -->
@@ -49,9 +44,9 @@
           interactives et dynamiques.
         </p>
         <div class="hero-img">
-          <img src="" alt="" />
+          <img src="./img/01-Logo.png" alt="" />
         </div>
-        <button>Voir les chapitres</button>
+        <button> <a href="./chapitre.html">Voir les chapitres</a></button>
       </div>
       <!-- HERO end -->
 
@@ -64,42 +59,42 @@
         <!-- card variable -->
         <article class="card-variables">
           <div class="popu-img">
-            <img src="" alt="" />
+            <img src="./img/VIGNIETTE-JS_4.png" alt="" />
           </div>
 
           <div class="popu-txt">
             <h3>Les Variables</h3>
           </div>
 
-          <button>Lire la suite</button>
+          <button> <a href="./Les_Cours/variable.html">Lire la suite</a></button>
         </article>
         <!-- card variable end -->
 
         <!-- card classe -->
         <article class="card-classes">
           <div class="popu-img">
-            <img src="" alt="" />
+            <img src="./img/VIGNIETTE-JS_3.png" alt="" />
           </div>
 
           <div class="popu-txt">
             <h3>Les classes</h3>
           </div>
 
-          <button>Lire la suite</button>
+          <button> <a href="#">Lire la suite</a></button>
         </article>
         <!-- card classe end -->
 
         <!-- card promise -->
         <article class="card-promises">
           <div class="popu-img">
-            <img src="" alt="" />
+            <img src="./img/VIGNIETTE-JS_2.png" alt="" />
           </div>
 
           <div class="popu-txt">
             <h3>Les promises</h3>
           </div>
 
-          <button>Lire la suite</button>
+          <button> <a href="#">Lire la suite</a></button>
         </article>
         <!-- card promise end -->
       </div>
@@ -114,60 +109,58 @@
         <!-- card2 variables -->
         <article class="card2-variables">
           <div class="base-img">
-            <img src="" alt="" />
+            <img src="./img/VIGNIETTE-JS_4.png" alt="" />
           </div>
 
           <div class="base-txt">
             <h3>Les Variables</h3>
           </div>
 
-          <button>Lire la suite</button>
+          <button> <a href="./Les_Cours/variable.html">Lire la suite</a></button>
         </article>
         <!-- card2 variables end -->
 
         <!-- card2 conditions -->
         <article class="card2-conditions">
           <div class="base-img">
-            <img src="" alt="" />
+            <img src="./img/VIGNIETTE-JS_1.png" alt="" />
           </div>
 
           <div class="base-txt">
             <h3>Les conditions</h3>
           </div>
 
-          <button>Lire la suite</button>
+          <button> <a href="./Les_Cours/condition.html">Lire la suite</a></button>
         </article>
         <!-- card2 conditions end -->
 
         <!-- card2 boucles -->
         <article class="card2-boucles">
           <div class="base-img">
-            <img src="" alt="" />
+            <img src="./img/VIGNIETTE-JS_5.png" alt="" />
           </div>
 
           <div class="base-txt">
             <h3>Les boucles</h3>
           </div>
 
-          <button>Lire la suite</button>
+          <button> <a href="./Les_Cours/boucles.html">Lire la suite</a></button>
         </article>
         <!-- card2 boucles -->
       </div>
       <!-- card bases end -->
     </main>
 
-    <footer>
-      <p>FAQ</p>
-      <p>À propos</p>
-      <p>Nous contacter</p>
-      <div class="reseaux">
-        <img src="/images/facebook.png" alt="" />
-        <img src="/images/instagram.png" alt="" />
-        <img src="images/X.png" alt="" />
-        <img src="/images/youtube.png" alt="" />
-      </div>
-
-      <p>&copy;copyright</p>
-    </footer>
+<!-- Footer -->
+<footer class="bg-footer">
+  <div class="footer-interieur">
+    <div class="footer-copyR">
+      <p>© 2026 LabCode — Plateforme d'apprentissage JavaScript. Tous droits réservés.</p>
+    </div>
+    <div class="footer-img">
+      <img src="./img/logo_Cfitech.png" alt="logo">
+    </div>
+  </div>
+</footer>
   </body>
 </html>

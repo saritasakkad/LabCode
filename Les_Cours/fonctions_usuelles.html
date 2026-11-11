@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Fonctions Usuelles | LabCode</title>
+    <link
+      rel="shortcut icon"
+      href="../img/03-Logo_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./fonctions_usuelles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-header">
+      <div class="header-interieur">
+        <a class="logo" href="index.html">
+          <div class="logo-icon">
+            <img src="../img/01-Logo.png" alt="logo" />
+          </div>
+          <div class="logo-text">
+            <span class="logo-titre">LabCode</span>
+            <span class="logo-sout-titre">FORMATION JAVASCRIPT</span>
+          </div>
+        </a>
+        <!-- Navigation -->
+        <nav class="main-nav">
+          <!-- Animation  du menu ul-link-->
+          <a class="nav-link ul-link" href="index.html">Accueil</a>
+          <a class="nav-link ul-link" href="../chapitre.html">Chapitres</a>
+          <a class="nav-link ul-link" href="#">À propos</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Contenu  -->
+    <main class="main-contenu">
+      <!-- Chapitres -->
+      <nav class="Chapitres">
+        <a href="../chapitre.html">Chapitres</a>
+        <span>➤</span>
+        <span>Les Fonctions Usuelles</span>
+      </nav>
+      <!-- En-tête du cours -->
+      <section class="cours-hero">
+        <div class="cours-hero-numero">6</div>
+        <div>
+          <h1 class="cours-titre">Les Fonctions Usuelles</h1>
+          <p class="cours-intro">
+            <strong>Nombres :</strong> <br />
+            Math.round(), Math.floor(), Math.random(), parseInt(), Number()
+            <br /><strong> chaînes de caractères :</strong> <br />
+            toUpperCase(), includes(), split(), replace(), trim() <br />
+            <strong>tableaux : </strong> <br />
+            push(), map(), filter(), reduce(), find(), forEach() <br />
+            <strong>objets :</strong> <br />
+            Object.keys(), Object.values(), Object.entries()
+          </p>
+        </div>
+      </section>
+      <!-- Contenu : cours retour & suivant -->
+      <div>
+        <!-- Fonctions -->
+        <!-- Blocs de code section -->
+        <section class="bloc">
+          <!-- exemple nombres  -->
+          <h2 class="bloc-titre">Fonctions Nombre</h2>
+          <p>Exemple :</p>
+          <!-- Bloc de code class="code" || & || Petit code dans une phrase <code> -->
+          <pre
+            class="code"
+          ><code><span class="mot">const notes = [14, 15, 12, 17];
+const moyenne = notes.reduce((a, b) => a + b, 0) / notes.length;
+
+console.log(moyenne);             // 14.5
+console.log(Math.round(moyenne)); // 15</span> 
+
+<p>Math.round(x) arrondit un nombre à l’entier le plus proche (.5 et plus → vers le haut).</p>
+
+</code></pre>
+
+          <!-- exemple chaine de caractere -->
+          <h2 class="bloc-titre">Fonctions Chaine De Caractères</h2>
+          <p>Exemple :</p>
+          <!-- Bloc de code class="code" || & || Petit code dans une phrase <code> -->
+          <pre
+            class="code"
+          ><code><span class="mot">console.log("bonjour".toUpperCase()); // "BONJOUR"</span> 
+
+</code></pre>
+          <p>toUpperCase() met une chaîne de caractères en majuscules.</p>
+
+          <!-- exemple tableaux  -->
+          <h2 class="bloc-titre">Fonctions Tableaux</h2>
+          <p>Exemple :</p>
+          <!-- Bloc de code class="code" || & || Petit code dans une phrase <code> -->
+          <pre
+            class="code"
+          ><code><span class="mot">[1, 2, 3].forEach(n => console.log(n * 2)); // 2, 4, 6</span> 
+
+</code></pre>
+          <p>
+            forEach() exécute une fonction pour chaque élément d’un tableau.
+          </p>
+
+          <!-- exemple objet  -->
+          <h2 class="bloc-titre">Fonctions Objet</h2>
+          <p>Exemple :</p>
+          <!-- Bloc de code class="code" || & || Petit code dans une phrase <code> -->
+          <pre
+            class="code"
+          ><code><span class="mot">const user = { nom: "Léa", age: 25 };
+console.log(Object.keys(user)); // ["nom", "age"]</span> 
+
+</code></pre>
+          <p>Object.keys() renvoie un tableau contenant les clés d’un objet.</p>
+        </section><br>
+        <div class="chapitre-nav">
+          <a class="chapitre-nav-retour" href="../chapitre.html"
+            >← Tous les chapitres</a
+          >
+          <a class="chapitre-nav-suivant" href="../Les_Chapitres/fonctions.html"
+            >Chapitre 07 : Les Timers →</a
+          >
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-footer">
+      <div class="footer-interieur">
+        <div class="footer-copyR">
+          <p>
+            © 2026 LabCode — Plateforme d'apprentissage JavaScript. Tous droits
+            réservés.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
